@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Portal</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="./resources/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./resources/imgs/umdlogo.gif">
+        </header>
+
+        <!--Side Bar-->
+
+        <aside id="sidemenu">
+            <ul>
+                <li><a href="#">Payroll Information</a></li>
+                <li><a href="#">Performance Appraisal</a></li>
+                <li><a href="#">Timesheet</a></li>
+                <li><a href="#">Leave Management</a></li>
+                <li><a href="#">Health Benefits</a></li>
+                <li><a href="/orgchart.html">Organization Chart</a></li>
+                <li><a href="#">Access Management</a></li>
+                <li><a href="#">Career Development</a></li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Expense Reumbursment</a></li>
+                <li><a href="#">Retirment Planning</a></li>
+                <li><a href="#">Ticket Managment</a></li>
+                <li><a href="#">Documents</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </aside>
+
+        <!--Main Content-->
+        <div class="mainContainer">
+            <div class="please">
+                <p>Please Complete the Following Form:</p>
+            </div>
+
+            <div id="form">
+                <table>
+                    <form name="ThankYouForm" action="thankyou.html">
+                        <tr>
+                            <td><strong>FEEDBACK</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="col1">CaseID:</td>
+                            <td class="col2"><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Subject:*</td>
+                            <td class="col2 comment"><input type="text" class="subject"></td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Comment:</td>
+                            <td class="col2"><textarea class="comment"></textarea>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td class="col1 importance">Importance:</td>
+                            <td class="col2"><input type="radio" name="importance">High</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="col2">
+                                <input type="radio" name="importance">Medium</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="col2">
+                                <input type="radio" name="importance">Low<br>
+                                <input type="submit" name="submit" value="Submit">
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+
+            </div>
+        </div>
+        <!--Footer-->
+
+        <footer>
+            <p>Copyright &copy; ArtByShelagh. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
