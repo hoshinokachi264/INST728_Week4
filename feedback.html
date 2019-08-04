@@ -7,6 +7,35 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="./resources/css/styles.css">
+    <script type="text/javascript">
+        //Form Validation Code
+
+        function validate() {
+
+            if (document.ThankYouForm.caseId.value == "") {
+                alert("Please enter Case ID");
+                document.ThankYouForm.caseId.focus();
+                return false;
+            }
+            if (document.ThankYouForm.subject.value == "") {
+                alert("Please enter a subject");
+                document.ThankYouForm.subject.focus();
+                return false;
+            }
+            if (document.ThankYouForm.comment.value == "") {
+                alert("Please enter a comment");
+                document.ThankYouForm.comment.focus();
+                return false;
+            }
+            if (document.ThankYouForm.importance.value == "-1") {
+                alert("Please choose level of importance");
+                return false;
+            }
+            return (true);
+
+        }
+    </script>
+
 </head>
 
 <body>
@@ -44,21 +73,21 @@
 
             <div id="form">
                 <table>
-                    <form name="ThankYouForm" action="thankyou.html">
+                    <form name="ThankYouForm" action="thankyou.html" onsubmit="return(validate());">
                         <tr>
                             <td><strong>FEEDBACK</strong></td>
                         </tr>
                         <tr>
                             <td class="col1">CaseID:</td>
-                            <td class="col2"><input type="text"></td>
+                            <td class="col2"><input type="text" name="caseId"></td>
                         </tr>
                         <tr>
                             <td class="col1">Subject:*</td>
-                            <td class="col2 comment"><input type="text" class="subject"></td>
+                            <td class="col2 comment"><input type="text" class="subject" name="subject"></td>
                         </tr>
                         <tr>
                             <td class="col1">Comment:</td>
-                            <td class="col2"><textarea class="comment"></textarea>
+                            <td class="col2"><textarea class="comment" name="comment"></textarea>
                         </tr>
                         <br>
                         <tr>
@@ -73,7 +102,7 @@
                         <tr>
                             <td>&nbsp;</td>
                             <td class="col2">
-                                <input type="radio" name="importance">Low<br>
+                                <input type="radio" name="importance" required>Low<br>
                                 <input type="submit" name="submit" value="Submit">
                             </td>
                         </tr>
@@ -88,6 +117,4 @@
             <p>Copyright &copy; ArtByShelagh. All Rights Reserved.</p>
         </footer>
     </div>
-</body>
-
-</html>
+</body></html>

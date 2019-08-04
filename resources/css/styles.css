@@ -7,7 +7,7 @@
 /*HEADER*/
 
 header {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
     background-color: white;
     padding: 20px;
 }
@@ -63,8 +63,15 @@ li {
 }
 
 .please {
-    background-color: ;
+    background-color: beige;
     padding: 20px;
+}
+.feedback
+{
+    background-color: white;
+    padding: 20px;
+    height: 310px;
+    margin: 1em;
 }
 
 #form {
@@ -79,9 +86,9 @@ li {
 /*FOOTER*/
 
 footer {
-    border-top: 1px solid gray;
+    border-top: 1px solid lightgray;
     background-color: beige;
     margin: auto;
     padding: 10px;
-    text-align: center;
+    text-align: right;
 }
